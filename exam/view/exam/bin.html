@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{foreach $data as $val}
+<p>{$val.name}</p>
+{/foreach}
+<a href="{:url('empty')}?id={$val.id}">清空</a>
+<a href="{:url('re')}?id={$val.id}">恢复</a>
+</body>
+</html>
